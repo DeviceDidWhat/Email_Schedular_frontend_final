@@ -37,7 +37,7 @@ const AdminPage = () => {
     
     try {
       const response = await axios.post(
-        "https://34.93.38.249:8080/api/admin/validate-password",
+        "https://emailschedule.me:8080/api/admin/validate-password",
         null,
         { params: { password } }
       );
@@ -76,7 +76,7 @@ const AdminPage = () => {
     
     try {
       const response = await axios.post(
-        "https://34.93.38.249:8080/api/admin/validate-otp",
+        "https://emailschedule.me:8080/api/admin/validate-otp",
         null,
         { params: { otp } }
       );
@@ -109,7 +109,7 @@ const AdminPage = () => {
     setLoading(true);
     try {
       const response = await axios.get(
-        "https://34.93.38.249:8080/api/admin/unapproved-users",
+        "https://emailschedule.me:8080/api/admin/unapproved-users",
         { params: { password } }
       );
 
@@ -128,7 +128,7 @@ const AdminPage = () => {
     setLoading(true);
     try {
       const response = await axios.post(
-        "https://34.93.38.249:8080/api/admin/approve",
+        "https://emailschedule.me:8080/api/admin/approve",
         null,
         { params: { userId, password } }
       );
@@ -170,7 +170,7 @@ const AdminPage = () => {
         setLoading(true);
         try {
           const response = await axios.post(
-            "https://34.93.38.249:8080/api/admin/deny",
+            "https://emailschedule.me:8080/api/admin/deny",
             null,
             { params: { userId, password } }
           );
@@ -214,7 +214,7 @@ const AdminPage = () => {
         setLoading(true);
         try {
           const response = await axios.post(
-            "https://34.93.38.249:8080/api/admin/bulk-approve",
+            "https://emailschedule.me:8080/api/admin/bulk-approve",
             null,
             { params: { password } }
           );

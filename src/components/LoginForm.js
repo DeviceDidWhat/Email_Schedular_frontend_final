@@ -16,7 +16,7 @@ const LoginForm = ({ onLogin }) => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        fetch('https://34.93.38.249:8080/api/auth/login', {
+        fetch('https://emailschedule.me:8080/api/auth/login', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(credentials),

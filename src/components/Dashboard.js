@@ -193,15 +193,15 @@ const handleModalSubmit = async (e) => {
     
     if (modalData.action === 'reschedule') {
       if (modalData.emailType === 'Invitation' && modalData.status === 'FAILED') {
-        endpoint = `https://34.93.38.249:8080/api/invitation/failed/${modalData.emailId}/reschedule`;
+        endpoint = `https://emailschedule.me:8080/api/invitation/failed/${modalData.emailId}/reschedule`;
       } else if (modalData.emailType === 'FollowUp' && modalData.status === 'FAILED') {
-        endpoint = `https://34.93.38.249:8080/api/followup/failed/${modalData.emailId}/reschedule`;
+        endpoint = `https://emailschedule.me:8080/api/followup/failed/${modalData.emailId}/reschedule`;
       }
     } else if (modalData.action === 'followup') {
       if (modalData.emailType === 'Invitation' && modalData.status === 'SENT') {
-        endpoint = `https://34.93.38.249:8080/api/invitation/sent/${modalData.emailId}/follow-up`;
+        endpoint = `https://emailschedule.me:8080/api/invitation/sent/${modalData.emailId}/follow-up`;
       } else if (modalData.emailType === 'FollowUp' && modalData.status === 'SENT') {
-        endpoint = `https://34.93.38.249:8080/api/followup/sent/${modalData.emailId}/resend`;
+        endpoint = `https://emailschedule.me:8080/api/followup/sent/${modalData.emailId}/resend`;
       }
     }
     
@@ -270,15 +270,15 @@ const handleModalSubmit = async (e) => {
       
       if (email.type === 'Invitation') {
         if (email.status === 'FAILED') {
-          endpoint = `https://34.93.38.249:8080/api/invitation/failed/${email.id}`;
+          endpoint = `https://emailschedule.me:8080/api/invitation/failed/${email.id}`;
         } else if (email.status === 'PENDING') {
-          endpoint = `https://34.93.38.249:8080/api/invitation/scheduled/${email.id}`;
+          endpoint = `https://emailschedule.me:8080/api/invitation/scheduled/${email.id}`;
         }
       } else if (email.type === 'FollowUp') {
         if (email.status === 'FAILED') {
-          endpoint = `https://34.93.38.249:8080/api/followup/failed/${email.id}`;
+          endpoint = `https://emailschedule.me:8080/api/followup/failed/${email.id}`;
         } else if (email.status === 'PENDING') {
-          endpoint = `https://34.93.38.249:8080/api/followup/scheduled/${email.id}`;
+          endpoint = `https://emailschedule.me:8080/api/followup/scheduled/${email.id}`;
         }
       }
       
@@ -417,7 +417,7 @@ const renderActionButtons = (email) => {
       }
 
       // Fetch dashboard summary from backend with authentication
-      const response = await fetch('https://34.93.38.249:8080/api/dashboard', {
+      const response = await fetch('https://emailschedule.me:8080/api/dashboard', {
         method: 'GET',
         headers: {
           'Authorization': `Bearer ${token}`,

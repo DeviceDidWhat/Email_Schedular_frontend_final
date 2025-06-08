@@ -40,7 +40,7 @@ const ScheduleEmailForm = () => {
     const token = localStorage.getItem("authToken");
     console.log("Token:", token); // Add this line to check the token value
 
-    fetch("https://34.93.38.249:8080/api/dashboard", {
+    fetch("https://emailschedule.me:8080/api/dashboard", {
       method: "GET",
       headers: {
         Authorization: `Bearer ${token}`, // Include token in the Authorization header
@@ -144,7 +144,7 @@ const ScheduleEmailForm = () => {
     console.log("Payload being sent:", updatedEmailData);
     const storedUsername = localStorage.getItem("username");
     const token = localStorage.getItem("authToken");
-    fetch(`https://34.93.38.249:8080/api/emails${endpoint}`, {
+    fetch(`https://emailschedule.me:8080/api/emails${endpoint}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -222,7 +222,7 @@ const ScheduleEmailForm = () => {
     formData.append("file", excelFile);
     const storedUsername = localStorage.getItem("username");
     const token = localStorage.getItem("authToken");
-    fetch(`https://34.93.38.249:8080/api/emails${endpoint}/bulk`, {
+    fetch(`https://emailschedule.me:8080/api/emails${endpoint}/bulk`, {
       method: "POST",
       headers: {
         Authorization: `Bearer ${token}`,

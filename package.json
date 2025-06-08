@@ -8,7 +8,7 @@
     "chart.js": "^4.4.7",
     "cra-template": "1.2.0",
     "framer-motion": "^11.15.0",
-    "lucide-react": "^0.471.1",
+    "lucide-react": "^0.471.2",
     "react": "^18.3.1",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.3.1",
