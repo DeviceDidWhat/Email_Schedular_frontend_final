@@ -1,0 +1,133 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.popup {
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.popup.success {
+  color: green;
+  background-color: #e0f7e0;
+  border: 1px solid #4caf50;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.popup.error {
+  color: red;
+  background-color: #f8d7da;
+  border: 1px solid #f44336;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+
+/* Custom background styles for the page */
+
+/* Thumbnail background */
+.thumbnail {
+  position: relative;
+  width: 1600px;
+  height: 690px;
+  background: linear-gradient(100.99deg, #FFFFFF 14.3%, #E8E8E8 100%);
+}
+
+/* Vector background with gradient effect */
+.vector-one {
+  position: absolute;
+  left: 40.97%;
+  right: -6.31%;
+  top: 40.16%;
+  bottom: -90.01%;
+  background: linear-gradient(137.73deg, rgba(1, 255, 234, 0) 26.61%, #EAFF60 101.2%);
+  opacity: 0.75;
+}
+
+/* Second vector with a color background */
+.vector-two {
+  position: absolute;
+  left: 33%;
+  right: 19.19%;
+  top: 21.88%;
+  bottom: -71.73%;
+  background: #C16AFF;
+  opacity: 0.25;
+}
+
+/* Frame background */
+.frame {
+  position: absolute;
+  left: -42.62%;
+  right: 53.38%;
+  top: -114.35%;
+  bottom: 9.67%;
+  background: #000000;
+}
+
+/* Additional elements and vectors */
+.group-one {
+  position: absolute;
+  left: 0%;
+  right: 25%;
+  top: 37.5%;
+  bottom: 6.25%;
+  background: #000000;
+}
+
+.group-two {
+  position: absolute;
+  left: 6.25%;
+  right: 12.5%;
+  top: 25%;
+  bottom: 12.5%;
+  background: #000000;
+}
+
+.group-three {
+  position: absolute;
+  left: 18.75%;
+  right: 0%;
+  top: 12.5%;
+  bottom: 25%;
+  background: #000000;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
